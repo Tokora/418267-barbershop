@@ -7,11 +7,13 @@
   <body>
     <header class="site-header">
       <div class="container">
-        <div class="index-logo">
-          <img src="http://placehold.it/150x100" width="150" height="60" alt="Барбершоп «Бородинский»">
-        </div>
         <nav class="site-navigation">
           <ul>
+            <li>
+              <a href="#">
+                <img src="http://placehold.it/150x100" width="150" height="60" alt="Барбершоп «Бородинский»">
+              </a>
+            </li>
             <li>
               <a href="#">Информация</a>
             </li>
@@ -54,48 +56,51 @@
       </div>
 <!--   Тут начинается основное содержание страницы-->
       <div class="filters">
-        <section class="filters-producers">
-          <h2>Производители</h2>
           <form action="#" method="get">
-            <label>
-              <input type="checkbox" checked> BAXTER OF CALIFORNIA 
-            </label>
-            <label>
-              <input type="checkbox"> MR NATTY 
-            </label>
-            <label>
-              <input type="checkbox" checked> SUAVECITO 
-            </label>
-            <label>
-              <input type="checkbox"> MAILN+GOETZ 
-            </label>
-            <label>
-              <input type="checkbox"> MURRAY'S 
-            </label>
-            <label>
-              <input type="checkbox" checked> AMERICAN CREW 
-            </label>
+            <fieldset>
+              <legend>Производители</legend>
+              <label>
+                <input name="filters-producers" type="checkbox" checked> BAXTER OF CALIFORNIA 
+              </label>
+              <label>
+                <input name="filters-producers" type="checkbox"> MR NATTY 
+              </label>
+              <label>
+                <input name="filters-producers" type="checkbox" checked> SUAVECITO 
+              </label>
+              <label>
+                <input name="filters-producers" type="checkbox"> MAILN+GOETZ 
+              </label>
+              <label>
+                <input name="filters-producers" type="checkbox"> MURRAY'S 
+              </label>
+              <label>
+                <input name="filters-producers" type="checkbox" checked> AMERICAN CREW 
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Группы товаров</legend>
+              <label>
+                <input type="radio" name="filters-group" value="Бритвенные принадлежности">
+                Бритвенные принадлежности
+              </label>
+              <label>
+                <input type="radio" name="filters-group" value="Средства для ухода" checked>
+                Средства для ухода 
+              </label>
+              <label>
+                <input type="radio" name="filters-group" value="Аксессуары">
+                Аксессуары 
+              </label>
+            </fieldset>
           </form>
-        </section>
-        <section class="filters-group">
-          <h2>Группы товаров</h2>
-          <form action="#" method="get">
-            <label>
-              <input type="checkbox" checked> Бритвенные принадлежности 
-            </label>
-            <label>
-              <input type="checkbox"> Средства для ухода 
-            </label>
-            <label>
-              <input type="checkbox" checked> Аксессуары 
-            </label>
-          </form>
-        </section>
       </div>
 <!--      Тут начинается раздел товаров с продуктами-->
       <div class="product">   
         <article class="product-unit">
-          <img src="http://placehold.it/150x100" alt="Набор для путешествий">
+          <a href="#">
+            <img src="http://placehold.it/150x100" alt="Набор для путешествий">
+          </a>
           <b>Набор для путешествий</b>
           <h3>BAXTER OF CALIFORNIA</h3>
           <section>
